@@ -11,7 +11,7 @@
 
 (function() {
   'use strict';
-  if(document.domain.includes('csdn')){
+  if(location.host.includes('csdn')){
       Object.defineProperty(window, "copyPopSwitch", {
           value: false,
           writable: false,
