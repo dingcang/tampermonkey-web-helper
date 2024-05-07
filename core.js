@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         web helper
-// @namespace    dc
+// @namespace    https://github.com/dingcang/tampermonkey-web-helper
 // @version      0.0.1
 // @description  网页助手
 // @author       dc
