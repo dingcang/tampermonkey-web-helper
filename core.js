@@ -9,12 +9,21 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-  'use strict';
-  if(location.host.includes('csdn')){
-      Object.defineProperty(window, "copyPopSwitch", {
-          value: false,
-          writable: false,
-      });
+(function () {
+  "use strict";
+  if (location.host.includes("csdn")) {
+    Object.defineProperty(window, "copyPopSwitch", {
+      value: false,
+      writable: false,
+    });
+  }
+
+  if (location.host.includes("9ku")) {
+    Object.defineProperty(window, "close", {
+      value: () => {
+        debugger;
+      },
+      writable: false,
+    });
   }
 })();
