@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         web helper
 // @namespace    https://github.com/dingcang/tampermonkey-web-helper
-// @version      0.0.1
+// @version      0.0.2
 // @description  网页助手
 // @author       dc
 // @match        *://*/*
