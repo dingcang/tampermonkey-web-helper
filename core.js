@@ -20,10 +20,17 @@
 
   if (location.host.includes("9ku")) {
     Object.defineProperty(window, "close", {
-      value: () => {
-        debugger;
+      value() {
+        console.log("window close");
       },
       writable: false,
     });
   }
+
+  Object.defineProperty(window, "DisableDevtool", {
+    value() {
+      console.log("window DisableDevtool", ...arguments);
+    },
+    writable: false,
+  });
 })();
